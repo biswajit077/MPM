@@ -8,14 +8,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ManPowerManagement.Infrastructure;
 
 namespace WindowsFormsApplication1
 {
     public partial class LoginForm : Form
     {
+        private readonly MPMEntity _db;
         public LoginForm()
         {
             InitializeComponent();
+            _db = new MPMEntity();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -25,24 +28,16 @@ namespace WindowsFormsApplication1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Biswajit Mandal\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\App_Data\Demo.mdf;Integrated Security=True");
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("Select r.RoleName From Users u join Roles r on u.RoleId = r.Id Where UserName = '"+ txtUserName.Text+"'And UserPassword = '" + txtPassword.Text+"'",connection);
-            DataTable dt = new DataTable();
-            sqlDataAdapter.Fill(dt);
-
-            if (dt.Rows.Count == 1)
+            int row = _db.Users.Count(x => x.UserName.Equals(txtUserName.Text.Trim()) & x.UserPassword.Equals(MPMCrypto.Crypto.ComputeHash(txtPassword.Text.Trim(), "SHA256", null)));
+            if (row > 0 )
             {
-                this.Hide(); // Hide the Login Page
-                MessageBox.Show("Super Admin");
+                this.Hide(); 
                 MPMMaster mpmMaster = new MPMMaster();
-
-                //mpmMaster.Controls["toolStripStatusLabel1"].Text = "Super Admin";
-                //((Form) this.MdiParent).Controls["toolStripStatusLabel1"].Text = dt.Rows[0][0].ToString();
                 mpmMaster.Show(); // Show the Main Page
             }
             else
             {
-                
+                Utility.ShowMessage("User Name or User Password Not valide, Please try again.");
             }
         }
     }

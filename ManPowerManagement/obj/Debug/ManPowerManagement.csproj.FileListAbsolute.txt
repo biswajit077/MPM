@@ -65,3 +65,35 @@ C:\Users\Biswajit Mandal\Downloads\Compressed\ManPowerManagement 11-11-2017\ManP
 C:\Users\Biswajit Mandal\Downloads\Compressed\ManPowerManagement 11-11-2017\ManPowerManagement\ManPowerManagement\bin\Debug\MPMCrypto.dll
 C:\Users\Biswajit Mandal\Downloads\Compressed\ManPowerManagement 11-11-2017\ManPowerManagement\ManPowerManagement\bin\Debug\MPMCrypto.pdb
 C:\Users\Biswajit Mandal\Downloads\Compressed\ManPowerManagement 11-11-2017\ManPowerManagement\ManPowerManagement\obj\Debug\ManPowerManagement.csprojResolveAssemblyReference.cache
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\bin\Debug\ManPowerManagement.exe.config
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.exe
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.pdb
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.Configuration.RoleForm.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.CivQual.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.fmDistrict.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\WindowsFormsApplication1.LoginForm.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.fmRank.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.Licence.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.Loc.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.MaterialStatus.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.MedCat.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\WindowsFormsApplication1.MPMMaster.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.PF.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.Properties.Resources.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.UserInformation.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.fmsoildersPersonalInfo.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.Svc_Length.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.fmSoilderOfficialInformation.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.SubUnit.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.fmTrade.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.csproj.GenerateResource.Cache
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\bin\Debug\ManPowerManagement.exe
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\bin\Debug\ManPowerManagement.pdb
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\bin\Debug\EntityFramework.dll
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\bin\Debug\EntityFramework.xml
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\bin\Debug\MPMCrypto.pdb
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.Migrations.AddedEntity.resources
+C:\Users\Biswajit Mandal\Desktop\ManPowerManagement\MPM\ManPowerManagement\obj\Debug\ManPowerManagement.csprojResolveAssemblyReference.cache

@@ -15,8 +15,8 @@ namespace ManPowerManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new LoginForm());
-            Application.Run(new RoleForm());
+            Application.Run(new LoginForm());
+            //Application.Run(new RoleForm());
         }
     }
 }

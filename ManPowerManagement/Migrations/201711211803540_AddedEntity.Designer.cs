@@ -7,13 +7,13 @@ namespace ManPowerManagement.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AddBranch : IMigrationMetadata
+    public sealed partial class AddedEntity : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddBranch));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedEntity));
         
         string IMigrationMetadata.Id
         {
-            get { return "201711171753268_AddBranch"; }
+            get { return "201711211803540_AddedEntity"; }
         }
         
         string IMigrationMetadata.Source

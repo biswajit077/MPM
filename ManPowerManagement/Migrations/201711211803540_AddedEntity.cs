@@ -3,10 +3,20 @@ namespace ManPowerManagement.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class SomeEntityAdded : DbMigration
+    public partial class AddedEntity : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.Branches",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        BranchCode = c.String(),
+                        BranchName = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
             CreateTable(
                 "dbo.Districts",
                 c => new
@@ -24,6 +34,15 @@ namespace ManPowerManagement.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         RankCode = c.String(),
                         RankName = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Roles",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        RoleName = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -93,21 +112,40 @@ namespace ManPowerManagement.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
+            CreateTable(
+                "dbo.Uers",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        UserName = c.String(),
+                        UserPassword = c.String(),
+                        RoleId = c.Int(nullable: false),
+                        Status = c.String(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Roles", t => t.RoleId, cascadeDelete: true)
+                .Index(t => t.RoleId);
+            
         }
         
         public override void Down()
         {
+            DropForeignKey("dbo.Uers", "RoleId", "dbo.Roles");
             DropForeignKey("dbo.SoldierOfficalInfos", "TradeId", "dbo.Trades");
             DropForeignKey("dbo.SoldierOfficalInfos", "SPID", "dbo.SolderPersonalInfos");
             DropForeignKey("dbo.SoldierOfficalInfos", "RankId", "dbo.Ranks");
+            DropIndex("dbo.Uers", new[] { "RoleId" });
             DropIndex("dbo.SoldierOfficalInfos", new[] { "RankId" });
             DropIndex("dbo.SoldierOfficalInfos", new[] { "TradeId" });
             DropIndex("dbo.SoldierOfficalInfos", new[] { "SPID" });
+            DropTable("dbo.Uers");
             DropTable("dbo.Trades");
             DropTable("dbo.SolderPersonalInfos");
             DropTable("dbo.SoldierOfficalInfos");
+            DropTable("dbo.Roles");
             DropTable("dbo.Ranks");
             DropTable("dbo.Districts");
+            DropTable("dbo.Branches");
         }
     }
 }

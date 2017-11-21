@@ -65,12 +65,6 @@
     <Compile Include="Configuration\RoleForm.designer.cs">
       <DependentUpon>RoleForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form\CivQual.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,33 +127,15 @@
     </Compile>
     <Compile Include="Infrastructure\MPMEntity.cs" />
     <Compile Include="Infrastructure\MPMExtensionMethod.cs" />
-    <Compile Include="Infrastructure\ObservableListSource.cs" />
     <Compile Include="Infrastructure\Security.cs" />
     <Compile Include="Infrastructure\Utility.cs" />
-    <Compile Include="Migrations\201711121459359_First.cs" />
-    <Compile Include="Migrations\201711121459359_First.Designer.cs">
-      <DependentUpon>201711121459359_First.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711170946040_SomeEntityAdded.cs" />
-    <Compile Include="Migrations\201711170946040_SomeEntityAdded.Designer.cs">
-      <DependentUpon>201711170946040_SomeEntityAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711171521477_AddedRole.cs" />
-    <Compile Include="Migrations\201711171521477_AddedRole.Designer.cs">
-      <DependentUpon>201711171521477_AddedRole.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711171750043_AddUser.cs" />
-    <Compile Include="Migrations\201711171750043_AddUser.Designer.cs">
-      <DependentUpon>201711171750043_AddUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711171753268_AddBranch.cs" />
-    <Compile Include="Migrations\201711171753268_AddBranch.Designer.cs">
-      <DependentUpon>201711171753268_AddBranch.cs</DependentUpon>
+    <Compile Include="Migrations\201711211803540_AddedEntity.cs" />
+    <Compile Include="Migrations\201711211803540_AddedEntity.Designer.cs">
+      <DependentUpon>201711211803540_AddedEntity.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\District.cs" />
-    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Rank.cs" />
     <Compile Include="Models\SoldierOfficialInfo.cs" />
     <Compile Include="Models\SoldierPersonalInfo.cs" />
@@ -212,9 +188,6 @@
     <EmbeddedResource Include="Configuration\RoleForm.resx">
       <DependentUpon>RoleForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form\CivQual.resx">
       <DependentUpon>CivQual.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,20 +218,8 @@
     <EmbeddedResource Include="Form\PF.resx">
       <DependentUpon>PF.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711121459359_First.resx">
-      <DependentUpon>201711121459359_First.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711170946040_SomeEntityAdded.resx">
-      <DependentUpon>201711170946040_SomeEntityAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711171521477_AddedRole.resx">
-      <DependentUpon>201711171521477_AddedRole.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711171750043_AddUser.resx">
-      <DependentUpon>201711171750043_AddUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711171753268_AddBranch.resx">
-      <DependentUpon>201711171753268_AddBranch.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201711211803540_AddedEntity.resx">
+      <DependentUpon>201711211803540_AddedEntity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
