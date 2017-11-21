@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33DAD105-456A-47B1-903C-F989FDB07C41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManPowerManagement</RootNamespace>
+    <AssemblyName>ManPowerManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="MPMCrypto">
+      <HintPath>..\..\..\Crypto.Net-master\MPMCrypto\bin\Debug\MPMCrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\RoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration\RoleForm.designer.cs">
+      <DependentUpon>RoleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\CivQual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CivQual.Designer.cs">
+      <DependentUpon>CivQual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fmDistrict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fmDistrict.Designer.cs">
+      <DependentUpon>fmDistrict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Licence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Licence.Designer.cs">
+      <DependentUpon>Licence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Loc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Loc.Designer.cs">
+      <DependentUpon>Loc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MaterialStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MaterialStatus.Designer.cs">
+      <DependentUpon>MaterialStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MedCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MedCat.Designer.cs">
+      <DependentUpon>MedCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MPMMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MPMMaster.designer.cs">
+      <DependentUpon>MPMMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\PF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PF.Designer.cs">
+      <DependentUpon>PF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\DataListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\ErrorProviderExtended.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\MPMEntity.cs" />
+    <Compile Include="Infrastructure\MPMExtensionMethod.cs" />
+    <Compile Include="Infrastructure\ObservableListSource.cs" />
+    <Compile Include="Infrastructure\Security.cs" />
+    <Compile Include="Infrastructure\Utility.cs" />
+    <Compile Include="Migrations\201711121459359_First.cs" />
+    <Compile Include="Migrations\201711121459359_First.Designer.cs">
+      <DependentUpon>201711121459359_First.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711170946040_SomeEntityAdded.cs" />
+    <Compile Include="Migrations\201711170946040_SomeEntityAdded.Designer.cs">
+      <DependentUpon>201711170946040_SomeEntityAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711171521477_AddedRole.cs" />
+    <Compile Include="Migrations\201711171521477_AddedRole.Designer.cs">
+      <DependentUpon>201711171521477_AddedRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711171750043_AddUser.cs" />
+    <Compile Include="Migrations\201711171750043_AddUser.Designer.cs">
+      <DependentUpon>201711171750043_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711171753268_AddBranch.cs" />
+    <Compile Include="Migrations\201711171753268_AddBranch.Designer.cs">
+      <DependentUpon>201711171753268_AddBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Branch.cs" />
+    <Compile Include="Models\District.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Rank.cs" />
+    <Compile Include="Models\SoldierOfficialInfo.cs" />
+    <Compile Include="Models\SoldierPersonalInfo.cs" />
+    <Compile Include="Models\Trade.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form\UserInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\UserInformation.Designer.cs">
+      <DependentUpon>UserInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fmSoilderPersonalInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fmSoilderPersonalInformation.Designer.cs">
+      <DependentUpon>fmSoilderPersonalInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Svc Length.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Svc Length.Designer.cs">
+      <DependentUpon>Svc Length.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fmSoilderOfficialInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fmSoilderOfficialInformation.Designer.cs">
+      <DependentUpon>fmSoilderOfficialInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fmRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fmRank.Designer.cs">
+      <DependentUpon>fmRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SubUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SubUnit.Designer.cs">
+      <DependentUpon>SubUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fmTrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fmTrade.Designer.cs">
+      <DependentUpon>fmTrade.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Configuration\RoleForm.resx">
+      <DependentUpon>RoleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CivQual.resx">
+      <DependentUpon>CivQual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fmDistrict.resx">
+      <DependentUpon>fmDistrict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fmRank.resx">
+      <DependentUpon>fmRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Licence.resx">
+      <DependentUpon>Licence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Loc.resx">
+      <DependentUpon>Loc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MaterialStatus.resx">
+      <DependentUpon>MaterialStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MedCat.resx">
+      <DependentUpon>MedCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MPMMaster.resx">
+      <DependentUpon>MPMMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\PF.resx">
+      <DependentUpon>PF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711121459359_First.resx">
+      <DependentUpon>201711121459359_First.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711170946040_SomeEntityAdded.resx">
+      <DependentUpon>201711170946040_SomeEntityAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711171521477_AddedRole.resx">
+      <DependentUpon>201711171521477_AddedRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711171750043_AddUser.resx">
+      <DependentUpon>201711171750043_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711171753268_AddBranch.resx">
+      <DependentUpon>201711171753268_AddBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Form\UserInformation.resx">
+      <DependentUpon>UserInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fmSoilderPersonalInformation.resx">
+      <DependentUpon>fmSoilderPersonalInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Svc Length.resx">
+      <DependentUpon>Svc Length.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fmSoilderOfficialInformation.resx">
+      <DependentUpon>fmSoilderOfficialInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SubUnit.resx">
+      <DependentUpon>SubUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fmTrade.resx">
+      <DependentUpon>fmTrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ManPowerManagement.Models.District.datasource" />
+    <None Include="Properties\DataSources\ManPowerManagement.Models.Product.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
